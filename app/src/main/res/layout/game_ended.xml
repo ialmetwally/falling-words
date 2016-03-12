@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/game_ended"
+              android:gravity="center"
+              android:padding="@dimen/padding_large"
+              android:background="@color/background"
+              android:visibility="gone">
+
+    <TextView
+            android:id="@+id/game_end_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/GAME_OVER_MSG"
+            android:gravity="center"
+            android:textSize="@dimen/text_xxxl"
+            android:layout_marginBottom="@dimen/margin_large"/>
+
+    <include layout="@layout/game_results"/>
+
+    <Button
+            android:id="@+id/start_over"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/START_OVER"/>
+
+</LinearLayout>

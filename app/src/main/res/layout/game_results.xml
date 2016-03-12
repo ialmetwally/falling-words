@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:stretchColumns="2"
+             android:padding="@dimen/padding_large">
+
+    <TableRow>
+
+        <TextView
+                style="@style/GameResultTitle"
+                android:layout_column="1"
+                android:text="@string/WORDS"
+                android:padding="@dimen/padding_small"/>
+
+        <TextView
+                android:id="@+id/words_count"
+                style="@style/GameResultItem"
+                android:layout_column="2"
+                android:padding="@dimen/padding_small"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+                style="@style/GameResultTitle"
+                android:layout_column="1"
+                android:text="@string/CORRECT_ANSWERS"
+                android:padding="@dimen/padding_small"/>
+
+        <TextView
+                android:id="@+id/correct_answers_count"
+                style="@style/GameResultItem"
+                android:layout_column="2"
+                android:padding="@dimen/padding_small"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+                style="@style/GameResultTitle"
+                android:layout_column="1"
+                android:text="@string/INCORRECT_ANSWERS"
+                android:padding="@dimen/padding_small"/>
+
+        <TextView
+                android:id="@+id/incorrect_answers_count"
+                style="@style/GameResultItem"
+                android:layout_column="2"
+                android:padding="@dimen/padding_small"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+                style="@style/GameResultTitle"
+                android:layout_column="1"
+                android:text="@string/NO_ANSWERS"
+                android:padding="@dimen/padding_small"/>
+
+        <TextView
+                android:id="@+id/no_answers_count"
+                style="@style/GameResultItem"
+                android:layout_column="2"
+                android:padding="@dimen/padding_small"/>
+    </TableRow>
+
+</TableLayout>

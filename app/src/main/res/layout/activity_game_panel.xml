@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/background"
+             tools:context=".FallingWordsActivity"
+             android:id="@+id/container">
+
+    <RelativeLayout
+            android:id="@+id/top_controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_large"
+            android:visibility="gone">
+
+        <ImageButton
+                android:id="@+id/pause"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pause"
+                android:background="@color/transparent"
+                android:layout_alignParentLeft="true"/>
+
+
+        <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#33b5e5"
+                android:textStyle="bold"
+                android:textSize="40sp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_below="@id/top_controls"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_controls"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+        <ImageButton
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/play"
+                android:background="@color/transparent"/>
+
+        <ImageButton
+                android:id="@+id/restart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/restart"
+                android:background="@color/transparent"
+                android:layout_marginTop="@dimen/margin_large"
+                android:visibility="gone"/>
+        <TextView
+                android:id="@+id/word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:keepScreenOn="true"
+                android:textColor="@color/light_blue"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_main_word"
+                android:gravity="center"
+                android:text="@string/MAIN_WORD"
+                android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:id="@+id/bottom_controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/padding_large"
+            android:visibility="gone">
+
+        <ImageButton
+                android:id="@+id/button_correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/correct"
+                android:background="@color/transparent"
+                android:layout_alignParentLeft="true"/>
+
+
+        <TextView
+                android:id="@+id/countdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/light_blue"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_count_down"
+                />
+
+        <ImageButton
+                android:id="@+id/button_wrong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:src="@drawable/incorrect"
+                android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/translation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:keepScreenOn="true"
+            android:textColor="@color/light_blue"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_xxxxl"
+            android:gravity="center"
+            android:text="@string/MAIN_WORD"
+            android:visibility="gone"/>
+
+
+    <include layout="@layout/game_ended" />
+
+</RelativeLayout>

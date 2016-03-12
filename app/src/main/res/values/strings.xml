@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">FallingWords</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="MAIN_WORD">Word</string>
+
+    <string name="RESTART">Restart</string>
+    <string name="CORRECT">Correct</string>
+    <string name="WRONG">Wrong</string>
+
+    <string name="GAME_OVER_MSG">Game Over!</string>
+    <string name="GAME_WON_MSG">Game Won!</string>
+    <string name="WORDS">Total Words:</string>
+    <string name="CORRECT_ANSWERS">Correct Answers:</string>
+    <string name="INCORRECT_ANSWERS">Incorrect Answers:</string>
+    <string name="NO_ANSWERS">No Answers:</string>
+
+    <string name="START_OVER">Start over</string>
+</resources>
